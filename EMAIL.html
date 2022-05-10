@@ -1,4 +1,85 @@
+<!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALL-EMAIL</title>
+<style>
+* {
+  box-sizing: border-box;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  }
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 18px;
+  padding: 12px 20px 12px 40px;
+  border: 4px solid #89CFF0;
+  margin-bottom: 10px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 2px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: none;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: green;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #f6f6f6;
+}
+</style>
+</head>
+<body>
+
+<h2></h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search in mails" title="Type in a name">
+
+
+ 
+  
+
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
+
+<html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="C:\Users\HP\Downloads\email.jpg">
@@ -19,8 +100,7 @@ h1{
 .g{text-align:center;
   height:20%;
     width:100%;
-   
-    border: 5px solid  rgb(0, 183, 255);
+   border: 5px solid  rgb(0, 183, 255);
     font-size:x-large;
     
    
@@ -130,76 +210,107 @@ ALL-EMAIL</H1>
 <center>
 <div class ='box'>
 
+
+<ul id="myUL">
+<li>
 <button class='g' onclick="window.location.href='https://mail.google.com/mail'">
-Google-Gmail
+<a href="https://mail.google.com/mail">Google-Gmail</a>
 </button>
+</li>
 
 <br>
+<li>
 <button class='o' onclick="window.location.href='https://www.outlook.com/'">
   
- Microsoft-Outlook</button>
+ <a href="https://www.outlook.com/">Microsoft-Outlook</a>
+ </button>
+</li>
 <br>
-
+<li>
 <button class='y' onclick="window.location.href='https://mail.yahoo.com/'">
 
-  Yahoo-Mail
+  <a href="#">Yahoo-Mail</a>
 </button>
+</li>
+<li>
 <button class='ya' onclick="window.location.href='https://mail.yandex.com/'">
   
 
-  Yandex-Mail
+  <a href="#">Yandex-Mail</a>
 </button>
+</li>
+<li>
 <button class='ya' onclick="window.location.href='https://mail.aol.com/'">
   
 
-  Aol-Mail
+  <a href="#">Aol-Mail</a>
 </button>
-</button>
+</li>
+
+<li>
 <button class='ya' onclick="window.location.href='https://outlook.office365.com/mail/login.html'">
   
 
-  Office 365-Mail
+ <a href="#">Office 365-Mail</a>
 </button>
+</li>
+<li>
 <button class='ya' onclick="window.location.href='https://www.gmx.com/#.1730814-messagebar-login1-1'">
   
 
-  GMX-Mail
+ <a href="#">GMX-Mail</a>
 </button>
+</li>
+<li>
 <button class='ya' onclick="window.location.href='https://www.rediffmailpro.com/cgi-bin/login.cgi'">
   
 
-  Rediff-Mail
+  <a href="#">Rediff-Mail</a>
 </button>
+</li>
+<li>
 <button class='ya' onclick="window.location.href='https://secure.hushmail.com/mail/'">
   
 
-  HushMail
+  <a href="#">HushMail</a>
 </button>
+</li>
+<li>
 <button class='ya' onclick="window.location.href='https://www.zoho.com/mail/login.html'">
   
 
-  Zoho-Mail
+  <a href="#">Zoho-Mail</a>
 </button>
+</li>
+<li>
 <button class='ya' onclick="window.location.href='https://www.icloud.com/mail'">
   
 
-  icloud-Mail
+  <a href="#">icloud-Mail</a>
 </button>
+</li>
+<li>
 <button class='ya' onclick="window.location.href='https://account.protonmail.com/login'">
   
 
-  Proton-Mail
+  <a href="#">Proton-Mail</a>
 </button>
+</li>
+<li>
 <button class='ya' onclick="window.location.href='https://www.inbox.com/login.aspx'">
   
 
-Inbox.com Mail
+<a href="#">Inbox.com Mail</a>
 </button>
+</li>
+<li>
 <button class='ya' onclick="window.location.href='https://www.mail.com/#.23140-messagebar-login1-1'">
   
 
-  Mail.com Mail
+  <a href="#">Mail.com Mail</a>
   </button>
+  </li>
+  </ul>
   
 
 </center>
