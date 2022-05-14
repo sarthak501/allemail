@@ -1,0 +1,272 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="C:\Users\HP\Downloads\email.jpg">
+<title>ALL-EMAIL</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="demo.css">
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+   -->
+   <style>
+     @media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left:0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+    div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+} 
+   </style>
+</head>
+
+<body onload="load()">
+  
+  <script>
+    
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("note-textarea");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+  <div class="sidebar">
+    <a href="https://meet.google.com/">Google-Meet</a>
+    <a href="https://www.microsoft.com/en-in/microsoft-teams/log-in">MS-Teams</a>
+    <a href="https://zoom.us/signin">Zoom</a>
+    
+    <a href="https://web.whatsapp.com/">Whatsapp</a>
+  </div>
+
+  <div class="allemail" > 
+     <img src = "email.png" alt = "logo" height = "60px" id = "logo_img">
+      <h1 style="color:rgb(28, 155, 224);font-size:4vw;">
+      ALL-EMAIL</h1>
+      <button onclick="GetSelectedText ()">
+        <img src="loud.jpg" height="50px"  alt="loud">
+        </button>
+</div>
+<!-- Search box Code -->
+
+<div class="hero">
+  <!-- <div class="hero" -->
+    <div id = "searchBox">
+        <!-- <img src="email.png" alt= "microphone" id="logo"> -->
+        <input type= "text" onkeyup="myFunction()" placeholder="Type or Press the 'Mic' to speak" rows="1" id="note-textarea">
+        <img src="mic.png" alt= "mic" class = "microphone" id = "start-record-btn">
+
+    </div>
+
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="try.js"></script>
+
+
+
+
+
+
+
+
+<center>
+  
+
+<div class ='box'>
+
+
+  <ul id="myUL">
+    <li><a href="https://mail.google.com/mail" target="_self">Gmail</a></li>
+    <li><a href="https://www.outlook.com/" target="_self">Outlook</a></li>
+    <li><a href="https://mail.yahoo.com/" target="_self">Yahoo-Mail</a></li>
+    <li><a href="https://mail.yandex.com/" target = "_self">Yandex</a></li>
+    
+    <li><a href="https://mail.aol.com/" target="_self">Aol-Mail</a></li>
+
+    <li><a href="https://outlook.office365.com/mail/login.html" target="_self">office365-mail</a></li>
+    <li><a href="https://www.gmx.com/#.1730814-messagebar-login1-1" target="_self">GMX-Mail</a></li>
+    <li><a href="https://www.rediffmailpro.com/cgi-bin/login.cgi" target="_self">Rediff-Mail</a></li>
+    <li><a href="https://secure.hushmail.com/mail/" target="_self">HushMail</a></li>
+    <li><a href="https://www.zoho.com/mail/login.html" target="_self">Zoho</a></li>
+    
+
+     <!--<li>
+      <button  onclick="window.location.href='https://mail.google.com/mail'" target="_self">
+        Google-Gmail
+      </button>
+    </li>
+    
+      
+      <br>
+      <button class='ya' onclick="window.location.href='https://www.outlook.com/'">
+        
+       Microsoft-Outlook</button>
+      <br>
+      
+      <button class='ya' onclick="window.location.href='https://mail.yahoo.com/'">
+      
+        Yahoo-Mail
+      </button>
+      <button class='ya' onclick="window.location.href='https://mail.yandex.com/'">
+        
+      
+        Yandex-Mail
+      </button>
+      <button class='ya' onclick="window.location.href='https://mail.aol.com/'">
+        
+      
+        Aol-Mail
+      </button>
+      </button>
+      <button class='ya' onclick="window.location.href='https://outlook.office365.com/mail/login.html'">
+        
+      
+        Office 365-Mail
+      </button>
+      <button class='ya' onclick="window.location.href='https://www.gmx.com/#.1730814-messagebar-login1-1'">
+        
+      
+        GMX-Mail
+      </button>
+      <button class='ya' onclick="window.location.href='https://www.rediffmailpro.com/cgi-bin/login.cgi'">
+        
+      
+        Rediff-Mail
+      </button>
+      <button class='ya' onclick="window.location.href='https://secure.hushmail.com/mail/'">
+        
+      
+        HushMail
+      </button>
+      <button class='ya' onclick="window.location.href='https://www.zoho.com/mail/login.html'">
+        
+      
+        Zoho-Mail
+      </button>
+      <button class='ya' onclick="window.location.href='https://www.icloud.com/mail'">
+        
+      
+        icloud-Mail
+      </button>
+      <button class='ya' onclick="window.location.href='https://account.protonmail.com/login'">
+        
+      
+        Proton-Mail
+      </button>
+      <button class='ya' onclick="window.location.href='https://www.inbox.com/login.aspx'">
+        
+      
+      Inbox.com Mail
+      </button>
+      <button class='ya' onclick="window.location.href='https://www.mail.com/#.23140-messagebar-login1-1'">
+        
+      
+        Mail.com Mail
+        </button> 
+</ul>
+-->
+
+<!-- <button class='ya' onclick="window.location.href='https://mail.google.com/mail'" target="_self">
+Google-Gmail
+</button>
+
+<br>
+<button class='ya' onclick="window.location.href='https://www.outlook.com/'">
+  
+ Microsoft-Outlook</button>
+<br>
+
+<button class='ya' onclick="window.location.href='https://mail.yahoo.com/'">
+
+  Yahoo-Mail
+</button>
+<button class='ya' onclick="window.location.href='https://mail.yandex.com/'">
+  
+
+  Yandex-Mail
+</button>
+<button class='ya' onclick="window.location.href='https://mail.aol.com/'">
+  
+
+  Aol-Mail
+</button>
+</button>
+<button class='ya' onclick="window.location.href='https://outlook.office365.com/mail/login.html'">
+  
+
+  Office 365-Mail
+</button>
+<button class='ya' onclick="window.location.href='https://www.gmx.com/#.1730814-messagebar-login1-1'">
+  
+
+  GMX-Mail
+</button>
+<button class='ya' onclick="window.location.href='https://www.rediffmailpro.com/cgi-bin/login.cgi'">
+  
+
+  Rediff-Mail
+</button>
+<button class='ya' onclick="window.location.href='https://secure.hushmail.com/mail/'">
+  
+
+  HushMail
+</button>
+<button class='ya' onclick="window.location.href='https://www.zoho.com/mail/login.html'">
+  
+
+  Zoho-Mail
+</button>
+<button class='ya' onclick="window.location.href='https://www.icloud.com/mail'">
+  
+
+  icloud-Mail
+</button>
+<button class='ya' onclick="window.location.href='https://account.protonmail.com/login'">
+  
+
+  Proton-Mail
+</button>
+<button class='ya' onclick="window.location.href='https://www.inbox.com/login.aspx'">
+  
+
+Inbox.com Mail
+</button>
+<button class='ya' onclick="window.location.href='https://www.mail.com/#.23140-messagebar-login1-1'">
+  
+
+  Mail.com Mail
+  </button>
+-->
+</center> 
+</div>
+
+</body>
+</html> 
