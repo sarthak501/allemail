@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: transparent;
+}
+
+#myUL {
+    width: 600px;
+}
+
+#myUL li {
+    list-style: none;
+    border: 2px solid rgb(196, 190, 190);
+    margin-bottom: 17px;
+    height: 20px;
+    border-radius: 7px;
+    background-color: darkgray;
+    box-shadow: 4px 4px 1px 2px rgb(0 0 0 / 15%), 13px 13px 5px -13px rgb(255 255 255 / 70%);
+    padding-top: 38px;
+    transition: transform .2s;
+}
+
+#myUL li:hover {
+    transform: scale(1.15);
+}
+
+#myUL li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+.hero {
+    width: 1801px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchBox {
+    border-radius: 76px;
+    padding: 2px;
+    background: rgb(231, 231, 231);
+    display: flex;
+    align-items: center;
+    box-shadow: 6px 6px 6px -1px rgb(0 0 0 / 15%), 13px 13px 5px -13px rgb(255 255 255 / 70%);
+    margin-top: 22px;
+}
+
+
+/* #logo{
+    width: 48px;
+    cursor: pointer;
+} */
+
+.microphone {
+    width: 48px;
+}
+
+input {
+    font-size: 20px;
+    padding: 2px 23px 2px;
+    width: 500px;
+    border: 0;
+    background: transparent;
+    outline: none;
+}

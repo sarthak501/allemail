@@ -1,0 +1,124 @@
+body {
+    background-image: url("gradient 2.jpg");
+}
+
+h1 {
+    padding-left: 0px 0px 0px 0px;
+    font-family: unset;
+}
+
+.allemail {
+    display: flex;
+    margin: 0px 0px 0px -79px;
+}
+
+#logo_img {
+    margin: 4px 10px 0px 800px;
+}
+
+.box {
+    margin-top: 40px;
+    margin-left: 313px;
+    border-radius: 4%;
+    padding: 0.5% 0 100px 0;
+    overflow: auto;
+    height: 50%;
+}
+
+.g {
+    text-align: center;
+    height: 20%;
+    width: 100%;
+    border: 5px solid rgb(0, 183, 255);
+    font-size: x-large;
+}
+
+.o {
+    margin-top: 5%;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+    border: 5px solid rgb(0, 183, 255);
+    font-size: x-large;
+}
+
+.y {
+    margin-top: 5%;
+    text-align: center;
+    height: 20%;
+    width: 100%;
+    border: 5px solid rgb(0, 183, 255);
+    font-size: x-large;
+}
+
+.ya {
+    margin-top: 5%;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    border: 5px solid rgb(0, 183, 255);
+    font-size: x-large;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    margin-top: 0%;
+    padding: 0;
+    width: 300px;
+    background-color: #2b96d8;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: whitesmoke;
+    padding: 36px;
+    text-decoration: none;
+    font-size: larger;
+    margin: 5%;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #04aa6d;
+    /* border:1px solid transparent; */
+    color: white;
+    border-radius: 19px;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+#Loudspeaker {
+    margin-top: 15px;
+    margin-left: 343px;
+}
