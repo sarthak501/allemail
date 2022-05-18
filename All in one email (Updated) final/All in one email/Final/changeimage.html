@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handleonChangeEvent(x)
+        {
+            document.body.style.backgroundImage="url('"+x+"')";
+        }
+    </script>
+</head>
+<body>
+    <select onchange ="handleonChangeEvent(this.value)">
+        <option value="tree.jpg">APPLY MODE</option>
+    <option value="black.jpg">darkmode</option>
+    <option vlaue="white.jpg">lightmode</option>
+    </select>
+    
+</body>
+</html>
